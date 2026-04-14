@@ -4,7 +4,7 @@ from wtforms import StringField, TextAreaField
 from wtforms.validators import DataRequired
 
 class MovieForm(FlaskForm):
-    title = StringFIeld('Movie Title', validators=[DataRequired()])
+    title = StringField('Movie Title', validators=[DataRequired()])
     description =TextAreaField('Description', validators=[DataRequired()])
     poster = FileField('Movie Poster', validators=[
         FileRequired(),
